@@ -1,4 +1,6 @@
-import { hash, genSalt, compare, } from 'bcrypt';
+import pkg from 'bcryptjs';
+const { hash, genSalt, compare } = pkg;
+
 
 export async function encryptPassword(plain) {
   const salt = await genSalt(16);
