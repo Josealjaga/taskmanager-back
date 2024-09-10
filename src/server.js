@@ -15,7 +15,11 @@ function bootstrap() {
   const __filename = fileURLToPath(import.meta.url);
   const __dirname = path.dirname(__filename);
 
-  app.use(cors());
+  const corsOptions = {
+    origin: 'https://taskmanager-front-3e5l-mgay6xbpx-jose-jarabas-projects.vercel.app',
+    optionsSuccessStatus: 200 
+  };
+  app.use(cors(corsOptions));
   app.use(morgan('dev'));
   app.use(express.json());
   app.use(express.urlencoded({ extended: false }));
