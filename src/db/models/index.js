@@ -5,8 +5,8 @@ User.hasMany(Task);
 Task.belongsTo(User);
 
 (async () => {
-    //await User.sync({ force: true, });
-    //await Task.sync({ force: true, });
+    await User.sync({ force: true, });
+    await Task.sync({ force: true, });
 })()
 
 export { User, Task, };
