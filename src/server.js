@@ -16,7 +16,7 @@ function bootstrap() {
   const __dirname = path.dirname(__filename);
 
   const corsOptions = {
-    origin: 'https://taskmanager-front-3e5l-mgay6xbpx-jose-jarabas-projects.vercel.app',
+    origin: 'https://taskmanager-front-beta.vercel.app',
     optionsSuccessStatus: 200 
   };
   app.use(cors(corsOptions));
